@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pokemon</h1>
+    <div>
+    <input type="text" id="search" placeholder="Buscar pokemon">
+    <select id="search-type">
+        <option value="">Seleccione</option>
+        <option value="pokemon">Por Nombre</option>
+        <option value="pokemon">Por ID</option>
+        <option value="type">Por Tipo</option>
+        <option value="ability">Por Habilidad</option>
+       <!-- <option value="pokemon-form">Por Estadística</option>-->
+        <option value="random">Aleatorio</option>
+    </select>
+</div>
+    <div class="buttons">
+        <button id="search-button">Buscar</button>
+        <button id="clear-button">Limpiar</button>
+    </div>
+    <div id="pokemon"></div>
+    <div id="pagination-controls">
+        <button id="prev-page" disabled>Anterior</button>
+        <button id="next-page" disabled>Siguiente</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
